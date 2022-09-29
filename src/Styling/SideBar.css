@@ -1,0 +1,84 @@
+/* Side CSS */
+.side-bar {
+  min-width: 15rem;
+  width: 15%;
+  background-color: #43c0f6;
+  color: #ffffff;
+  padding: 1.5625rem 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+/* User Image CSS */
+.side-bar .user-image {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.7625rem;
+}
+
+.side-bar .user-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Tabs CSS */
+.user-tab-wrapper {
+  width: 100%;
+}
+
+.user-tab {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-tab:nth-of-type(1) {
+  background-color: #b2e4fa;
+  color: #707070;
+}
+
+.user-tab-name {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Arrow Button */
+.arrow-button {
+  background-color: #b2e4fa;
+  height: 4.5rem;
+  width: 4rem;
+  display: flex;
+  margin: 2rem 0;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+/* User Profile Button CSS */
+.user-profile-buttons-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: auto;
+}
+
+.user-profile-button-text {
+  text-transform: capitalize;
+  font-size: 0.625rem;
+}
