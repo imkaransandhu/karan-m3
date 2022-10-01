@@ -2,9 +2,3 @@
   display: flex;
   width: 100%;
 }
-
-/* Main Dashboard CSS */
-.dashboard {
-  flex: 1;
-  background-color: #b2e4fa;
-}
