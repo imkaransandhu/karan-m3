@@ -10,8 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  height: 100%;
+  height: auto;
 }
 
 /* User Image CSS */
@@ -39,9 +38,15 @@
   padding: 0.75rem 1rem;
   align-items: center;
   cursor: pointer;
+  color: #ffffff;
 }
 
-.user-tab:nth-of-type(1) {
+.user-tab.active {
+  background-color: #b2e4fa;
+  color: #707070;
+}
+
+.active-link {
   background-color: #b2e4fa;
   color: #707070;
 }

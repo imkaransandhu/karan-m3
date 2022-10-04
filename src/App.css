@@ -19,6 +19,10 @@ h6 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (max-width: 576px) {
   :root {
     font-size: 12px;

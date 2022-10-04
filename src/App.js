@@ -1,8 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import DashboardWrapper from "./Components/DashboardWrapper";
+import TeacherPage from "./Pages/TeacherPage";
 
 function App() {
-  return <DashboardWrapper />;
+  return (
+    <BrowserRouter>
+      <TeacherPage />
+    </BrowserRouter>
+  );
 }
 
 export default App;

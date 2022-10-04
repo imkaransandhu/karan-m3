@@ -1,8 +1,8 @@
-import "./../Styling/Dashboard.css";
+import "./../../../Styling/Dashboard.css";
 import ProgressTrackerHeader from "./ProgressTrackerHeader";
 import StudentProjectWrapper from "./StudentProjectWrapper";
 
-const Dashboard = () => {
+const ProgressTracker = () => {
   return (
     <div className="dashboard">
       <div className="scroll-bar-outer">
@@ -15,4 +15,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default ProgressTracker;

@@ -3,9 +3,9 @@ import ArrowButton from "./ArrowButton";
 import UserImage from "./userImage";
 import UserProfileButtonsWrapper from "./UserProfileButtonsWrapper";
 import UserTabWrapper from "./UserTabWrapper";
-import "./../Styling/SideBar.css";
+import "./../../Styling/SideBar.css";
 
-const SideBar = () => {
+const TeacherSideNavBar = () => {
   const [sideBarViewSmall, setSideBarViewLarge] = useState(false);
 
   const changeSideBarView = () => {
@@ -30,4 +30,4 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default TeacherSideNavBar;
