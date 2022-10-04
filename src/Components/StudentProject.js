@@ -8,11 +8,18 @@ const StudentProject = ({ student, projects }) => {
         </p>
       </div>
       <div className="student-project-details">
-        {projects.map((project, index) => (
-          <div className="project-circle" key={index}>
-            {project}
-          </div>
-        ))}
+        {projects.map((project, index) => {
+          let goGreen;
+          student.completedProjects.map((completedProject) => {
+            completedProject === project &&
+              (goGreen = "student-completed-projects");
+          });
+          return (
+            <div className={`project-circle ${goGreen} `} key={index}>
+              {project}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

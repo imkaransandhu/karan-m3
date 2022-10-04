@@ -18,9 +18,36 @@
   overflow: scroll;
   height: 31rem;
   scrollbar-color: #43c0f6 #fff;
-  scrollbar-gutter: auto;
   padding-right: 3rem;
 }
+
+/* .scroll-bar::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll-bar::-webkit-scrollbar-button {
+  width: 10px;
+  color: red;
+  background-color: red;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+  width: 10px;
+  color: red;
+  background-color: red;
+}
+.scroll-bar::-webkit-scrollbar-track-piece {
+  width: 10px;
+  color: red;
+  background-color: red;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+  color: yellow;
+  background-color: yellow;
+}
+.scroll-bar::-webkit-scrollbar-corner {
+}
+.scroll-bar::-webkit-resizer {
+} */
 
 /* header of project tracker CSS */
 .progess-tracker-header {
@@ -43,7 +70,7 @@
   text-transform: uppercase;
   width: 16rem;
   border: 0;
-  background-color: #ffffff80;
+  background-color: transparent;
   align-items: center;
   justify-content: flex-start;
 }
@@ -97,6 +124,11 @@
   align-items: center;
   height: 2rem;
   width: 2rem;
-  border: 1px solid #000;
+  border: 1px solid #a2a0a0;
   border-radius: 50%;
+}
+
+/*  */
+.student-completed-projects {
+  background-color: #99edcc;
 }

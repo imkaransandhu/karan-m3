@@ -15,7 +15,7 @@ const StudentProjectWrapper = () => {
     { studentName: "Cyrus", completedProjects: [3, 6, 23, 15, 2, 4] },
     { studentName: "Alexandra ", completedProjects: [1, 7, 9, 10] },
     { studentName: "Karnsuda Cream", completedProjects: [4, 7, 12, 6, 7, 11] },
-    { studentName: "Jacob", completedProjects: [3, 6, 23, 15, 2, 4] },
+    { studentName: "Jacob", completedProjects: [3, 6, 15, 2, 4] },
   ];
   return (
     <div className="student-project-wrapper">
