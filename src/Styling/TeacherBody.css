@@ -144,10 +144,16 @@
   color: #707070;
   margin-top: 1rem;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .student-detail img {
   height: 5rem;
   width: 5rem;
+  border-radius: 50% 50%;
+}
+
+/* Hiding the student project table */
+.student-project-table {
+  display: none;
 }
