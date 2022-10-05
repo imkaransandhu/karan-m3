@@ -21,10 +21,8 @@ const ProgressTracker = () => {
   return (
     <div className="dashboard">
       <div className="scroll-bar-outer">
+        <ProgressTrackerHeader studentProjectDetails={studentProjectDetails} />
         <div className="scroll-bar">
-          <ProgressTrackerHeader
-            studentProjectDetails={studentProjectDetails}
-          />
           <StudentProjectWrapper
             studentProjectDetails={studentProjectDetails}
           />
