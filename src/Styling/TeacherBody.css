@@ -18,35 +18,22 @@
   height: 31rem;
   scrollbar-color: #43c0f6 #fff;
   padding-right: 3rem;
+  overflow-x: hidden;
 }
 
-/* .scroll-bar::-webkit-scrollbar {
-  width: 10px;
-}
-.scroll-bar::-webkit-scrollbar-button {
-  width: 10px;
-  color: red;
-  background-color: red;
+/* ScrollBar Css for safari and google chrome */
+.scroll-bar::-webkit-scrollbar {
+  width: 0.85rem;
 }
 
-.scroll-bar::-webkit-scrollbar-track {
-  width: 10px;
-  color: red;
-  background-color: red;
-}
 .scroll-bar::-webkit-scrollbar-track-piece {
-  width: 10px;
-  color: red;
-  background-color: red;
+  background-color: #ffffff;
+  border-radius: 1rem;
 }
 .scroll-bar::-webkit-scrollbar-thumb {
-  color: yellow;
-  background-color: yellow;
+  background-color: #43c0f6;
+  border-radius: 1rem;
 }
-.scroll-bar::-webkit-scrollbar-corner {
-}
-.scroll-bar::-webkit-resizer {
-} */
 
 /* header of project tracker CSS */
 .progess-tracker-header {
@@ -72,6 +59,7 @@
   background-color: transparent;
   align-items: center;
   justify-content: flex-start;
+  cursor: pointer;
 }
 
 .spreadsheet img {

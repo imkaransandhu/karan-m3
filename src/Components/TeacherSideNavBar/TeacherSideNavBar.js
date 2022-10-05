@@ -3,7 +3,7 @@ import ArrowButton from "./ArrowButton";
 import UserImage from "./userImage";
 import UserProfileButtonsWrapper from "./UserProfileButtonsWrapper";
 import UserTabWrapper from "./UserTabWrapper";
-import "./../../Styling/SideBar.css";
+import "./../../Styling/TeacherSideNavBar.css";
 
 const TeacherSideNavBar = () => {
   const [sideBarViewSmall, setSideBarViewLarge] = useState(false);

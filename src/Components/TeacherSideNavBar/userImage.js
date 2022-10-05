@@ -1,5 +1,4 @@
-const UserImage = ({ view }) => {
-  console.log(view);
+const UserImage = () => {
   return (
     <div className="user-image">
       <img src={`./images/Ellipse 38@2x.png`} alt="User face" />

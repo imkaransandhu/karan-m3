@@ -1,4 +1,4 @@
-import "./../../../Styling/Dashboard.css";
+import "./../../../Styling/TeacherBody.css";
 import ProgressTrackerHeader from "./ProgressTrackerHeader";
 import StudentProjectWrapper from "./StudentProjectWrapper";
 
