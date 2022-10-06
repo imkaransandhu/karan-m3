@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./../Styling/TeacherPage.css";
 
@@ -8,15 +9,31 @@ import ProgressTracker from "../Components/TeacherBody/ProgressTracker/ProgressT
 import StudentProfile from "../Components/TeacherBody/StudentProfile/StudentProfile";
 
 export default function TeacherPage() {
+  const [sideBarViewSmall, setSideBarViewSmall] = useState(false);
+
+  const changeSideBarView = () => {
+    setSideBarViewSmall(!sideBarViewSmall);
+  };
+
   return (
     <div>
       <TeacherNavBar />
 
       <div className="teacherBody dashboard-wrapper">
-        <TeacherSideNavBar />
+        <TeacherSideNavBar
+          changeSideBarView={changeSideBarView}
+          sideBarViewSmall={sideBarViewSmall}
+        />
         <Routes>
-          <Route path="/" element={<ProgressTracker />} />
-          <Route path="/StudentProfile" element={<StudentProfile />} />
+          <Route
+            path="/"
+            element={<ProgressTracker sideBarViewSmall={sideBarViewSmall} />}
+          />
+          <Route
+            path="/StudentProfile"
+            sideBarViewSmall={sideBarViewSmall}
+            element={<StudentProfile />}
+          />
         </Routes>
       </div>
 

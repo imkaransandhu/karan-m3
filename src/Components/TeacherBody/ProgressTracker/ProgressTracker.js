@@ -2,7 +2,7 @@ import "./../../../Styling/TeacherBody.css";
 import ProgressTrackerHeader from "./ProgressTrackerHeader";
 import StudentProjectWrapper from "./StudentProjectWrapper";
 
-const ProgressTracker = () => {
+const ProgressTracker = ({ sideBarViewSmall }) => {
   const studentProjectDetails = [
     { studentName: "AIDEN ANDREWS", completedProjects: [1, 2, 3, 4] },
     { studentName: "COURTNEY BRISTOL", completedProjects: [1, 2, 3, 4] },
@@ -19,7 +19,13 @@ const ProgressTracker = () => {
   ];
 
   return (
-    <div className="dashboard">
+    <div
+      style={{
+        maxWidth: sideBarViewSmall && "calc(100vw - 7rem)",
+        width: sideBarViewSmall && "calc(100vw - 7rem)",
+      }}
+      className="dashboard"
+    >
       <div className="scroll-bar-outer">
         <ProgressTrackerHeader studentProjectDetails={studentProjectDetails} />
         <div className="scroll-bar">

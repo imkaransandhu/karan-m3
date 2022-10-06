@@ -1,9 +1,15 @@
 import React from "react";
 import WrapperStudentDetails from "./WrapperStudentDetails";
 
-const StudentProfile = () => {
+const StudentProfile = ({ sideBarViewSmall }) => {
   return (
-    <div className="dashboard">
+    <div
+      style={{
+        maxWidth: sideBarViewSmall && "calc(100vw - 7rem)",
+        width: sideBarViewSmall && "calc(100vw - 7rem)",
+      }}
+      className="dashboard"
+    >
       <div className="scroll-bar-outer">
         <div className="scroll-bar">
           <WrapperStudentDetails />
