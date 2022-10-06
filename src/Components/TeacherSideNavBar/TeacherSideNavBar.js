@@ -3,7 +3,6 @@ import UserImage from "./userImage";
 import UserProfileButtonsWrapper from "./UserProfileButtonsWrapper";
 import UserTabWrapper from "./UserTabWrapper";
 import "./../../Styling/TeacherSideNavBar.css";
-import MobileTeacherSideNavBar from "./MobileTeacherSideNavBar";
 
 const TeacherSideNavBar = ({ sideBarViewSmall, changeSideBarView }) => {
   return (
@@ -14,7 +13,6 @@ const TeacherSideNavBar = ({ sideBarViewSmall, changeSideBarView }) => {
       }}
       className="side-bar"
     >
-      <MobileTeacherSideNavBar />
       <UserImage view={sideBarViewSmall} />
       <UserTabWrapper view={sideBarViewSmall} />
       <ArrowButton

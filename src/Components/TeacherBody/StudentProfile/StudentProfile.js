@@ -5,7 +5,7 @@ const StudentProfile = ({ sideBarViewSmall }) => {
   return (
     <div
       style={{
-        maxWidth: sideBarViewSmall && "calc(100vw - 7rem)",
+        minWidth: sideBarViewSmall && "calc(100vw - 7rem)",
         width: sideBarViewSmall && "calc(100vw - 7rem)",
       }}
       className="dashboard"
